@@ -33,6 +33,8 @@ module.exports = function(app) {
 
             else {
                 res.render("home");
+
+                console.log("home");
             }
         });
     }
@@ -70,5 +72,5 @@ module.exports = function(app) {
             }
         });
     });
-    module.exports = "views-routes";
+    //module.exports = "views-routes";
 }

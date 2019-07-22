@@ -22,7 +22,7 @@ module.exports = function(app) {
 
     app.post("/api/scrape", function(req, res) {
 
-        request("http://www.bbc.com", function(error, response, html) {
+        request("http://www.npr.org/sections/news/", function(error, response, html) {
 
         var $ = cheerio.load(html);
 
@@ -133,5 +133,5 @@ module.exports = function(app) {
             })
         })
     });
-    module.exports = "api-routes";
+   // module.exports = "api-routes";
 }

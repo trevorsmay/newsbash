@@ -29,7 +29,7 @@ app.use(express.static("public"));
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, { 
-    //useNewUrlParser: true });
+    useNewUrlParser: true
 });
 
 require("./routes/index.js")(app);
